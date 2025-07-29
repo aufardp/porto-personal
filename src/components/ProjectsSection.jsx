@@ -3,30 +3,31 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/default-img.jpg",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
+    title: "Acara Landing Page",
+    description:
+      "A beautiful landing page app using NextJS Framework and Tailwind, with JWT Token, search engine.",
+    image: "/projects/fe-acara.jpg",
+    tags: ["Next.js", "TailwindCSS", "Typescript"],
+    demoUrl: "https://front-end-acara-puce.vercel.app/",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Backend For Acara Website",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/default-img.jpg",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
+      "Rest API with ExpressJS, Typescript and Documentation with Swagger, deploy with vercel.",
+    image: "/projects/be-acara.jpg",
+    tags: ["TypeScript", "Express.js", "Swagger"],
+    demoUrl: "https://back-end-acara-kohl.vercel.app/api-docs/",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Coming Soon",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "/projects/default-img.jpg",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["React", "Node.js", "Midtrans"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -52,10 +53,11 @@ export const ProjectsSection = () => {
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-video rounded-xl overflow-hidden group h-48 rounded-t-lg min-w-0">
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -100,7 +102,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/aufardp"
           >
             Check My Github <ArrowRight size={16} />
           </a>
