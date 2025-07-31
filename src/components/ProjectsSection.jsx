@@ -23,6 +23,16 @@ const projects = [
   },
   {
     id: 3,
+    title: "Dompis (Dashboard Monitoring Performance)",
+    description:
+      "Dashboard for monitoring performance indicator employee at Telkom Akses, basic tech with PHP and framework CodeIgniter. ",
+    image: "/projects/dompis.png",
+    tags: ["PHP", "MySQL", "CodeIgniter"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 4,
     title: "Coming Soon",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
